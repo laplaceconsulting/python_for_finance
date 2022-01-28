@@ -47,7 +47,8 @@ retorno_total = returns_acm * pesos
 #calcula retoerno total da carteira
 retorno_total["total"] = retorno_total.sum(axis=1)
 
-retorno_total['total'].plot()
+# Modificação feita em 28/01/2022 para evitar o display da configuração gráfica
+retorno_total['total'].plot();
 
 #matriz covariancia
 cov_matrix = retorno.cov()
